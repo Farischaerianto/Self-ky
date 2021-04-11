@@ -40,10 +40,10 @@ ATAU
 
 #  Special Thanks
 tq bruhh
-```Hum
+
 • X-MrG3P5
 • X-Mrcyber51
 • And Creator All
 
 Tq udh mampir ke github gw ><
-```
+
