@@ -12,6 +12,10 @@ Follow Me [GITHUB](https://github.com/Franky-397)
 
 Bug/Emror? [WHATSAPP](https://wa.me/6283183586629)
 
+# Warning!
+
+Jangan memperjual belikan sc ini ya,jika ada yg memperjual belikan hubungi saya,
+Ini free buat kalian ye
 
 # Cara Install!
 Download dlu
