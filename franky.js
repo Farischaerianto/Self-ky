@@ -49,7 +49,7 @@ const { Utils_1 } = require('./node_modules/@adiwajshing/baileys/lib/WAConnectio
 //Apikey 
 const vhtearkey = 'MASUKIN_APIKEY'  // beli di :  vhtear.com
 const onlydevkey = 'MASUKIN_APIKEY' // beli di : onlydevcity.herokuapp.com
-const tobzkey 'MASUKIN_APIKEY' // di bot tobz/elaina bot 
+const tobzkey = 'MASUKIN_APIKEY' // di bot tobz/elaina bot 
 ///payment
 const nomer = '083183586629'
 //yak
@@ -120,7 +120,7 @@ frnky.on('group-participants-update', async (anu) => {
 			} catch {
 				ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
-			teks = `Hallo @${num.split('@')[0]}\Welcome to group ${mdata.subject} Jangan lupa intro kau!...Betah-betah yah di sini🖤`
+			teks = `Hallo @${num.split('@')[0]}\Welcome to group ${mdata.subject} Jangan lupa intro kau!...Betah-betah yah di siniðŸ–¤`
 			let buff = await getBuffer(ppimg)
 			frnky.sendMessage(mdata.id, teks, MessageType.text)
 		} else if (anu.action == 'remove') {
@@ -130,7 +130,7 @@ frnky.on('group-participants-update', async (anu) => {
 			} catch {
 				ppimg = 'https://i0.wp.com/www.gambarunik.id/wp-content/uploads/2019/06/Top-Gambar-Foto-Profil-Kosong-Lucu-Tergokil-.jpg'
 			}
-			teks = `Sayonara🥳 @${num.split('@')[0]} .`
+			teks = `SayonaraðŸ¥³ @${num.split('@')[0]} .`
 			let buff = await getBuffer(ppimg)
 			frnky.sendMessage(mdata.id, teks, MessageType.text)
 		}
@@ -203,7 +203,7 @@ frnky.on('message-update', async (hurtz) => {
 					}
 				}
 			if (int.type == 'conversation' || int.type == 'extendedTextMessage') {
-				const strConversation = `「 *ANTI-DELETE* 」
+				const strConversation = `ã€Œ *ANTI-DELETE* ã€
 
 *Nama :* ${pushname} ( @${sender.replace('@s.whatsapp.net', '')} )
 *Tipe :* Text
@@ -225,7 +225,7 @@ frnky.on('message-update', async (hurtz) => {
 					}
 				const filename = `${sender.replace('@s.whatsapp.net', '')}-${moment().unix()}`
 				const savedFilename = await frnky.downloadAndSaveMediaMessage(int.data, `./antidelete/sticker/${filename}`);
-				const strConversation = `「 *ANTI-DELETE* 」
+				const strConversation = `ã€Œ *ANTI-DELETE* ã€
 
 Nama :* ${pushname} ( @${sender.replace('@s.whatsapp.net', '')} )
 Tipe :* Sticker
@@ -253,7 +253,7 @@ Tipe :* Sticker
 				const filename = `${sender.replace('@s.whatsapp.net', '')}-${moment().unix()}`
 				const savedFilename = await frnky.downloadAndSaveMediaMessage(int.data, `./antidelete/image/${filename}`);
 				const buff = fs.readFileSync(savedFilename)
-				const strConversation = `「 *ANTI-DELETE* 」
+				const strConversation = `ã€Œ *ANTI-DELETE* ã€
 
 *Nama :* ${pushname} ( @${sender.replace('@s.whatsapp.net', '')} )
 *Tipe :* Image
@@ -299,7 +299,7 @@ frnky.on('message-new', async (mek) => {
 		
 
 		mess = {
-			wait: 'wait 🏃‍♂️',
+			wait: 'wait ðŸƒâ€â™‚ï¸',
 			success: 'Berhasil!',
 			error: {
 				stick: 'Itu video gblk!',
@@ -470,7 +470,7 @@ frnky.on('message-new', async (mek) => {
 			case 'brainly':
 				var teks = body.slice(9)
 				axios.get(`https://api.vhtear.com/branly?query=${teks}&apikey=${vhtearkey}`).then((res) => {
-					let hasil = ` ͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏͏ ${res.data.result.data}`;
+					let hasil = ` ÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍÍ ${res.data.result.data}`;
 					frnky.sendMessage(from, hasil, MessageType.text, { quoted: mek });
 				})
 				break
@@ -492,11 +492,11 @@ frnky.on('message-new', async (mek) => {
 				}
 				if (!isGroup) return reply(mess.only.group)
 				if (args[0] === 'open') {
-					frnky.sendMessage(from, `*「 SUCCES OPEN GRUP 」*`, MessageType.text, groupp)
+					frnky.sendMessage(from, `*ã€Œ SUCCES OPEN GRUP ã€*`, MessageType.text, groupp)
 					frnky.groupSettingChange(from, GroupSettingChange.messageSend, false)
 				} else if (args[0] === 'close') {
 					await frnky.groupSettingChange(from, GroupSettingChange.messageSend, true)
-					frnky.sendMessage(from, `*「 SUCCES CLOSE GRUP 」*`, MessageType.text, groupp)
+					frnky.sendMessage(from, `*ã€Œ SUCCES CLOSE GRUP ã€*`, MessageType.text, groupp)
 				}
                                 break
 
@@ -527,7 +527,7 @@ frnky.on('message-new', async (mek) => {
 				}
 				var teks = body.slice(6)
 				axios.get(`https://alfians-api.herokuapp.com/api/wiki?q=${teks}`).then((res) => {
-					frnky.sendMessage(from, '[ WAIT ] Searching...⏳ silahkan tunggu', MessageType.text, wimki)
+					frnky.sendMessage(from, '[ WAIT ] Searching...â³ silahkan tunggu', MessageType.text, wimki)
 					let hasil = `Menurut Wikipedia:\n\n${res.data.result}`;
 					frnky.sendMessage(from, hasil, MessageType.text, wimki);
 				})
@@ -548,7 +548,7 @@ frnky.on('message-new', async (mek) => {
 					}
 				}
 				await frnky.groupUpdateSubject(from, `${body.slice(8)}`)
-				frnky.sendMessage(from, `*「 CHANGE TO ${body.slice(8)} 」*`, MessageType.text, gcname)
+				frnky.sendMessage(from, `*ã€Œ CHANGE TO ${body.slice(8)} ã€*`, MessageType.text, gcname)
 				break
          ///GROUP
 			case 'gcdesk':
@@ -566,7 +566,7 @@ frnky.on('message-new', async (mek) => {
 					}
 				}
 				await frnky.groupUpdateDescription(from, `${body.slice(8)}`)
-				frnky.sendMessage(from, `*「 CHANGE TO ${body.slice(8)} 」*`, MessageType.text, gcdesk)
+				frnky.sendMessage(from, `*ã€Œ CHANGE TO ${body.slice(8)} ã€*`, MessageType.text, gcdesk)
 				break
          ///MAKER
              case 'epep':
@@ -605,55 +605,55 @@ frnky.on('message-new', async (mek) => {
 					rate = body.slice(1)
 					const ra =['0','4','9','17','28','34','48','59','62','74','83','97','100','29','94','75','82','41','39']
 					const te = ra[Math.floor(Math.random() * ra.length)]
-					frnky.sendMessage(from, '❏Pertanyaan : *'+rate+'*\n❏Jawaban : '+ te+'%', text, { quoted: freply})
+					frnky.sendMessage(from, 'âPertanyaan : *'+rate+'*\nâJawaban : '+ te+'%', text, { quoted: freply})
 					break
 ///KODE BHS
 case 'kodebhs':
 frnky.sendMessage(from, `
   KODE | BAHASA
- ❏  af : Afrikaans
- ❏  sq: Albanian
- ❏  ar: Arabic
- ❏  hy: Armenian
- ❏  ca: Catalan
- ❏  zh: Chinese
- ❏  hr: Croatian
- ❏  cs: Czech
- ❏  da: Danish
- ❏  nl: Dutch
- ❏  en: English
- ❏  eo: Esperanto
- ❏  fi: Finnish
- ❏  fr: French
- ❏  de: German
- ❏  el: Greek
- ❏  ht: Haitian Creole
- ❏  hi: Hindi
- ❏  hu: Hungarian
- ❏  is: Icelandic
- ❏  id: Indonesian
- ❏  it: Italian
- ❏  ja: Japanese
- ❏  ko: Korean
- ❏  la: Latin
- ❏  lv: Latvian
- ❏  mk: Macedonian
- ❏  no: Norwegian
- ❏  pl: Polish
- ❏  pt: Portuguese
- ❏  ro: Romanian
- ❏  ru: Russian
- ❏  sr: Serbian
- ❏  sk: Slovak
- ❏  es: Spanish
- ❏  sw: Swahili
- ❏  sv: Swedish
- ❏  ta: Tamil
- ❏  th: Thai
- ❏  tr: Turkish
- ❏  vi: Vietnamese
- ❏  cy: Welsh
- ❏ NIH GW NYALIN YE :V
+ â  af : Afrikaans
+ â  sq: Albanian
+ â  ar: Arabic
+ â  hy: Armenian
+ â  ca: Catalan
+ â  zh: Chinese
+ â  hr: Croatian
+ â  cs: Czech
+ â  da: Danish
+ â  nl: Dutch
+ â  en: English
+ â  eo: Esperanto
+ â  fi: Finnish
+ â  fr: French
+ â  de: German
+ â  el: Greek
+ â  ht: Haitian Creole
+ â  hi: Hindi
+ â  hu: Hungarian
+ â  is: Icelandic
+ â  id: Indonesian
+ â  it: Italian
+ â  ja: Japanese
+ â  ko: Korean
+ â  la: Latin
+ â  lv: Latvian
+ â  mk: Macedonian
+ â  no: Norwegian
+ â  pl: Polish
+ â  pt: Portuguese
+ â  ro: Romanian
+ â  ru: Russian
+ â  sr: Serbian
+ â  sk: Slovak
+ â  es: Spanish
+ â  sw: Swahili
+ â  sv: Swedish
+ â  ta: Tamil
+ â  th: Thai
+ â  tr: Turkish
+ â  vi: Vietnamese
+ â  cy: Welsh
+ â NIH GW NYALIN YE :V
 
 SELF-KY`, MessageType.text, {quoted: freply})
 break
@@ -679,9 +679,9 @@ break
 					}
 				}
 				data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=${tobzkey}`, { method: 'get' })
-				teks = '-「 Play Music From Joox 」-\n'
+				teks = '-ã€Œ Play Music From Joox ã€-\n'
 				const joox = data.result
-				teks += `\n- Judul : ${joox.title}\n- Album : ${joox.album}\n- Publish At : ${joox.dipublikasi}\n\n-「 F-BOT」-`
+				teks += `\n- Judul : ${joox.title}\n- Album : ${joox.album}\n- Publish At : ${joox.dipublikasi}\n\n-ã€Œ F-BOTã€-`
 				thumb = await getBuffer(joox.thumb)
 				frnky.sendMessage(from, mess.wait, MessageType.text, selepbot)
 				frnky.sendMessage(from, thumb, image, { quoted: mek, caption: teks })
@@ -691,63 +691,63 @@ break
          ///MENUNYA SU
 case 'download':
 frnky.sendMessage(from, `
- ❏  DOWNLOADER
+ â  DOWNLOADER
 
-❏ ${prefix}play [optional]
-❏ ${prefix}ytmp3 [linkYT]
-❏ ${prefix}ytmp4 [linkYT]
-❏ ${prefix}tiktoknowm [linkTT] 
-❏ ${prefix}film [optional]
-❏ ${prefix}igdl [linkIG] 
-❏ ${prefix}igtv [linkIG] 
-❏ ${prefix}fb [linkFB] 
-❏ ${prefix}tiktok [linkTT]
-❏ ${prefix}joox [optional]
+â ${prefix}play [optional]
+â ${prefix}ytmp3 [linkYT]
+â ${prefix}ytmp4 [linkYT]
+â ${prefix}tiktoknowm [linkTT] 
+â ${prefix}film [optional]
+â ${prefix}igdl [linkIG] 
+â ${prefix}igtv [linkIG] 
+â ${prefix}fb [linkFB] 
+â ${prefix}tiktok [linkTT]
+â ${prefix}joox [optional]
 
 SELF-KY`, MessageType.text, {quoted: downloadsu})
 					break
 case 'nsfw':
 frnky.sendMessage(from, `
-❏ NSFW
+â NSFW
 
-❏ ${prefix}randomhentai
-❏ ${prefix}xxx [optional]
-❏ ${prefix}bokep
-❏ ${prefix}nsfwtrap
-❏ ${prefix}nsfwneko
-❏ ${prefix}nsfwblowjob
-❏ ${prefix}hot 1-25 [pilih aja]
+â ${prefix}randomhentai
+â ${prefix}xxx [optional]
+â ${prefix}bokep
+â ${prefix}nsfwtrap
+â ${prefix}nsfwneko
+â ${prefix}nsfwblowjob
+â ${prefix}hot 1-25 [pilih aja]
 
 SELF-KY`, MessageType.text, {quoted: nsfwsu})
 					break
 case 'anime':
 frnky.sendMessage(from, `
-❏ ANIME
+â ANIME
 
-❏ ${prefix}shota
-❏ ${prefix}loli
-❏ ${prefix}animehuggif
-❏ ${prefix}waifu
-❏ ${prefix}neko
-❏ ${prefix}wait [tag]
+â ${prefix}shota
+â ${prefix}loli
+â ${prefix}animehuggif
+â ${prefix}waifu
+â ${prefix}neko
+â ${prefix}wait [tag]
 
 SELF-KY`, MessageType.text, {quoted: animesu})
 					break
 case 'media':
 frnky.sendMessage(from, `
-❏ MEDIA
+â MEDIA
 
-❏ ${prefix}trendtwit
-❏ ${prefix}brainly [optional]
-❏ ${prefix}wiki
-❏ ${prefix}tinyurl
-❏ ${prefix}pinterest [optional]
-❏ ${prefix}image [optional]
-❏ ${prefix}lirik [nama lagu]
-❏ ${prefix}tiktokstalk [username]
-❏ ${prefix}igstalk [username]
-❏ ${prefix}ytsearch [query]
-❏ ${prefix}kbbi
+â ${prefix}trendtwit
+â ${prefix}brainly [optional]
+â ${prefix}wiki
+â ${prefix}tinyurl
+â ${prefix}pinterest [optional]
+â ${prefix}image [optional]
+â ${prefix}lirik [nama lagu]
+â ${prefix}tiktokstalk [username]
+â ${prefix}igstalk [username]
+â ${prefix}ytsearch [query]
+â ${prefix}kbbi
 
 SELF-KY`, MessageType.text, {quoted: mediasu})
 					break
@@ -759,76 +759,76 @@ SELF-KY`, MessageType.text, {quoted: mediasu})
 					break
                      case 'fun':
 frnky.sendMessage(from, `
-❏  FUN
+â  FUN
 
-❏ ${prefix}katagw
-❏ ${prefix}pantun
-❏ ${prefix}hilih [teks]
-❏ ${prefix}alay [teks]
-❏ ${prefix}rate
-❏ ${prefix}quotes
-❏ ${prefix}dare
-❏ ${prefix}truth
-❏ ${prefix}tts [kode bhs]
-❏ ${prefix}caklongtong 
-❏ ${prefix}tebakgambar 
-❏ ${prefix}family100
+â ${prefix}katagw
+â ${prefix}pantun
+â ${prefix}hilih [teks]
+â ${prefix}alay [teks]
+â ${prefix}rate
+â ${prefix}quotes
+â ${prefix}dare
+â ${prefix}truth
+â ${prefix}tts [kode bhs]
+â ${prefix}caklongtong 
+â ${prefix}tebakgambar 
+â ${prefix}family100
 
 SELF-KY`, MessageType.text, {quoted: funsu})
 					break
 case 'maker':
 frnky.sendMessage(from, `
-❏  MAKER
+â  MAKER
 
-❏ ${prefix}galaxtext [teks]
-❏ ${prefix}gembok [teks]
-❏ ${prefix}coffeteks [teks]
-❏ ${prefix}party [teks]
-❏ ${prefix}ffbanner [teks]
-❏ ${prefix}blackpink [teks]
-❏ ${prefix}lovemake [teks]
-❏ ${prefix}thunder [teks]
-❏ ${prefix}tahta [teks]
-❏ ${prefix}pornlogo [teks|teks]
-❏ ${prefix}logml [teks]
-❏ ${prefix}mlogo [teks]
-❏ ${prefix}quotemaker [teks|teks]
-❏ ${prefix}rteks [teks]
-❏ ${prefix}nulis [nama/kelas/isinye]
-❏ ${prefix}ultah [teks]
-❏ ${prefix}metalteks [teks]
-❏ ${prefix}logopubg [teks|teks]
-❏ ${prefix}apiteks [teks]
-❏ ${prefix}asap [teks]
-❏ ${prefix}silkteks [teks]
-❏ ${prefix}glowing [teks]
-❏ ${prefix}airteks [teks]
-❏ ${prefix}gula [teks]
-❏ ${prefix}glitch [teks|teks]
-❏ ${prefix}glow [teks]
-❏ ${prefix}neon [teks]
-❏ ${prefix}textlight [teks]
-❏ ${prefix}bittext [teks|teks]
-❏ ${prefix}hilih [teks]
-❏ ${prefix}ocr [tag/krim gmbar]
-❏ ${prefix}toimg [tag sticker]
-❏ ${prefix}sticker [tag/krim gmbar]
- ❏ TANPA TANDA [ ]
+â ${prefix}galaxtext [teks]
+â ${prefix}gembok [teks]
+â ${prefix}coffeteks [teks]
+â ${prefix}party [teks]
+â ${prefix}ffbanner [teks]
+â ${prefix}blackpink [teks]
+â ${prefix}lovemake [teks]
+â ${prefix}thunder [teks]
+â ${prefix}tahta [teks]
+â ${prefix}pornlogo [teks|teks]
+â ${prefix}logml [teks]
+â ${prefix}mlogo [teks]
+â ${prefix}quotemaker [teks|teks]
+â ${prefix}rteks [teks]
+â ${prefix}nulis [nama/kelas/isinye]
+â ${prefix}ultah [teks]
+â ${prefix}metalteks [teks]
+â ${prefix}logopubg [teks|teks]
+â ${prefix}apiteks [teks]
+â ${prefix}asap [teks]
+â ${prefix}silkteks [teks]
+â ${prefix}glowing [teks]
+â ${prefix}airteks [teks]
+â ${prefix}gula [teks]
+â ${prefix}glitch [teks|teks]
+â ${prefix}glow [teks]
+â ${prefix}neon [teks]
+â ${prefix}textlight [teks]
+â ${prefix}bittext [teks|teks]
+â ${prefix}hilih [teks]
+â ${prefix}ocr [tag/krim gmbar]
+â ${prefix}toimg [tag sticker]
+â ${prefix}sticker [tag/krim gmbar]
+ â TANPA TANDA [ ]
 
 SELF-KY`, MessageType.text, {quoted: makersu})
 					break
 case 'voice':
 frnky.sendMessage(from, `
-❏ VOICE
+â VOICE
 
-❏ ${prefix}bass
-❏ ${prefix}slow
-❏ ${prefix}toptt
-❏ ${prefix}serem
-❏ ${prefix}aneh
-❏ ${prefix}nightcore
-❏ ${prefix}tupai
-❏ ${prefix}gemuk
+â ${prefix}bass
+â ${prefix}slow
+â ${prefix}toptt
+â ${prefix}serem
+â ${prefix}aneh
+â ${prefix}nightcore
+â ${prefix}tupai
+â ${prefix}gemuk
 
 SELF-KY`, MessageType.text, {quoted: voicesu})
     break
@@ -866,7 +866,7 @@ SELF-KY`, MessageType.text, {quoted: voicesu})
 					const pimterest = amsulah[Math.floor(Math.random() * amsulah.length)]
 					thumb = await getBuffer(pimterest)
 				}
-				frnky.sendMessage(from, `wait🏃‍♂️`, text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "*Pinterest🗿*", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIADoAUQMBIgACEQEDEQH/xAAsAAEAAwEBAQAAAAAAAAAAAAAAAgMFBAYBAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAADwYAAAAAEo2EoeggYctbsPMX7XIZPycABZWNvLoHTfnjTo4x0c4AAAAAAAf//EAC0QAAMAAgEDAwIDCQAAAAAAAAECAwQRAAUSMRMhImGSFCCRJEBBQlBRUmOx/9oACAEBAAE/AP3dFLsqjW2IA2QB+p5PHvUoJxdy7FU7VJ7iPcgcM6AMxRtKwVjrwT4B4Y2Hdub/ABRXb28K2tE/Q74+Nead7yZV+BHcNbDglSPodcKsp0wIOgf14mLeisyKCFAJII/ipf8A4vCrKFJBAYbH1Hj8kXWdFdpJUD+RywB+0g8z8N4dXtiQgHxlo5STuyy2qbbmXTHxhjt2SZ6I4yISuzy/17IZudWImmKoT0bvH9pkHc+DpAQxbma/bTqUE2hwEAlUO/eQjiXMARsnTUvAX/EZxgS7vtUQIAF03OjXcdSxJnbLS0kPzddbPbsFCOUFQQKBge1dBv8AEjY/JJ1m4ZpJQDfwbYB+0g8yOvXybpZ8eHm21AfTesgRuXrOpUpjzj9ELnf3luWyTe+Tek0L2ZmPkBSx3teX6lW4uTKS0v7Wou9v7huY/VDj+l24sG9K5vLff8GOv7NzEy/wl43WEneWivd3a7g2w3sRzKyGybeqyKnwRAq70AihB5/on//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQIBAT8AR//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQMBAT8AR//Z", "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==" } } } })
+				frnky.sendMessage(from, `waitðŸƒâ€â™‚ï¸`, text, { quoted: { key: { fromMe: false, participant: `0@s.whatsapp.net`, ...(from ? { remoteJid: "status@broadcast" } : {}) }, message: { "imageMessage": { "url": "https://mmg.whatsapp.net/d/f/At0x7ZdIvuicfjlf9oWS6A3AR9XPh0P-hZIVPLsI70nM.enc", "mimetype": "image/jpeg", "caption": "*PinterestðŸ—¿*", "fileSha256": "+Ia+Dwib70Y1CWRMAP9QLJKjIJt54fKycOfB2OEZbTU=", "fileLength": "28777", "height": 1080, "width": 1079, "mediaKey": "vXmRR7ZUeDWjXy5iQk17TrowBzuwRya0errAFnXxbGc=", "fileEncSha256": "sR9D2RS5JSifw49HeBADguI23fWDz1aZu4faWG/CyRY=", "directPath": "/v/t62.7118-24/21427642_840952686474581_572788076332761430_n.enc?oh=3f57c1ba2fcab95f2c0bb475d72720ba&oe=602F3D69", "mediaKeyTimestamp": "1610993486", "jpegThumbnail": "/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEABERERESERMVFRMaHBkcGiYjICAjJjoqLSotKjpYN0A3N0A3WE5fTUhNX06MbmJiboyiiIGIosWwsMX46/j///8BERERERIRExUVExocGRwaJiMgICMmOiotKi0qOlg3QDc3QDdYTl9NSE1fToxuYmJujKKIgYiixbCwxfjr+P/////CABEIADoAUQMBIgACEQEDEQH/xAAsAAEAAwEBAQAAAAAAAAAAAAAAAgMFBAYBAQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIQAxAAAADwYAAAAAEo2EoeggYctbsPMX7XIZPycABZWNvLoHTfnjTo4x0c4AAAAAAAf//EAC0QAAMAAgEDAwIDCQAAAAAAAAECAwQRAAUSMRMhImGSFCCRJEBBQlBRUmOx/9oACAEBAAE/AP3dFLsqjW2IA2QB+p5PHvUoJxdy7FU7VJ7iPcgcM6AMxRtKwVjrwT4B4Y2Hdub/ABRXb28K2tE/Q74+Nead7yZV+BHcNbDglSPodcKsp0wIOgf14mLeisyKCFAJII/ipf8A4vCrKFJBAYbH1Hj8kXWdFdpJUD+RywB+0g8z8N4dXtiQgHxlo5STuyy2qbbmXTHxhjt2SZ6I4yISuzy/17IZudWImmKoT0bvH9pkHc+DpAQxbma/bTqUE2hwEAlUO/eQjiXMARsnTUvAX/EZxgS7vtUQIAF03OjXcdSxJnbLS0kPzddbPbsFCOUFQQKBge1dBv8AEjY/JJ1m4ZpJQDfwbYB+0g8yOvXybpZ8eHm21AfTesgRuXrOpUpjzj9ELnf3luWyTe+Tek0L2ZmPkBSx3teX6lW4uTKS0v7Wou9v7huY/VDj+l24sG9K5vLff8GOv7NzEy/wl43WEneWivd3a7g2w3sRzKyGybeqyKnwRAq70AihB5/on//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQIBAT8AR//EABQRAQAAAAAAAAAAAAAAAAAAAED/2gAIAQMBAT8AR//Z", "scansSidecar": "1W0XhfaAcDwc7xh1R8lca6Qg/1bB4naFCSngM2LKO2NoP5RI7K+zLw==" } } } })
 				frnky.sendMessage(from, thumb, image, { quoted: mek, caption: `- Pinterest : ` + papapale })
 				break
         ///OTHER
@@ -976,10 +976,10 @@ case 'tebakgambar':
 					frnky.sendMessage(from, '* Jawaban :* '+anu.result.jawaban, text, {quoted: mek}) // ur cods
 					}, 20000) // 1000 = 1s,
 					setTimeout( () => {
-					frnky.sendMessage(from, '_10 Detik lagi_�', text) // ur cods
+					frnky.sendMessage(from, '_10 Detik lagi_…', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					frnky.sendMessage(from, '_20 Detik lagi_�', text) // ur cods
+					frnky.sendMessage(from, '_20 Detik lagi_…', text) // ur cods
 					}, 2500) // 1000 = 1s,
 					setTimeout( () => {
 					frnky.sendMessage(from, bufferkkk, image, { caption: '_Jelaskan Apa Maksud Gambar Ini_', quoted: mek }) // ur cods
@@ -991,10 +991,10 @@ case 'tebakgambar':
 					frnky.sendMessage(from, '* Jawaban :* '+anu.result.jawaban+'\n'+anu.result.desk, text, {quoted: mek}) // ur cods
 					}, 20000) // 1000 = 1s,
 					setTimeout( () => {
-					frnky.sendMessage(from, '_10 Detik lagi_�', text) // ur cods
+					frnky.sendMessage(from, '_10 Detik lagi_…', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					frnky.sendMessage(from, '_20 Detik lagi_�', text) // ur cods
+					frnky.sendMessage(from, '_20 Detik lagi_…', text) // ur cods
 					}, 1000) // 1000 = 1s,
 					setTimeout( () => {
 					frnky.sendMessage(from, anu.result.soal, text, { quoted: mek }) // ur cods
@@ -1006,10 +1006,10 @@ case 'tebakgambar':
 					frnky.sendMessage(from, '* Jawaban :* '+anu.result.jawaban, text, {quoted: mek}) // ur cods
 					}, 20000) // 1000 = 1s,
 					setTimeout( () => {
-					frnky.sendMessage(from, '_10 Detik lagi_�', text) // ur cods
+					frnky.sendMessage(from, '_10 Detik lagi_…', text) // ur cods
 					}, 10000) // 1000 = 1s,
 					setTimeout( () => {
-					frnky.sendMessage(from, '_20 Detik lagi_�', text) // ur cods
+					frnky.sendMessage(from, '_20 Detik lagi_…', text) // ur cods
 					}, 1000) // 1000 = 1s,
 					setTimeout( () => {
 					frnky.sendMessage(from, anu.result.soal, text, { quoted: mek }) // ur cods
@@ -1018,10 +1018,10 @@ case 'tebakgambar':
        ///DOWNLOAD
 			case 'ytmp4':
 			
-				if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('url nya tidak valid njerr🗿')				
+				if(!isUrl(args[0]) && !args[0].includes('youtu')) return reply('url nya tidak valid njerrðŸ—¿')				
 		anu = await fetchJson(`https://api.vhtear.com/ytdl?link=${args[0]}&apikey=${vhtearkey}`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
-					teks = `*• Judul* : ${anu.result.title}\n\n*_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_*`
+					teks = `*â€¢ Judul* : ${anu.result.title}\n\n*_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_*`
 					thumb = await getBuffer(anu.result.imgUrl)
 					frnky.sendMessage(from, `${teks}`, text, { quoted: waitsu})
 					buffer = await getBuffer(anu.result.UrlVideo)
@@ -1130,7 +1130,7 @@ case 'tebakgambar':
                                         anu = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${toby}&apikey=${tobzkey}`, {method: 'get'})
                                         hepi = anu.result[0]
                                         buffer = await getBuffer(hepi.image)
-                                        teks = ` *HAPPY MOD* \n Title : ${hepi.title} \n Size : ${hepi.size} \n Version : ${hepi.version} \n Root : ${hepi.root} \n Purchase : ${hepi.purchase} \n   Price : ${hepi.price} \n   Link : ${hepi.link} \n  └─ ❏ Download : ${hepi.download} `
+                                        teks = ` *HAPPY MOD* \n Title : ${hepi.title} \n Size : ${hepi.size} \n Version : ${hepi.version} \n Root : ${hepi.root} \n Purchase : ${hepi.purchase} \n   Price : ${hepi.price} \n   Link : ${hepi.link} \n  â””â”€ â Download : ${hepi.download} `
                                         frnky.sendMessage(from, `${teks}`, text, { quoted: freply})
                                         break
             ///DOWNLOAD
@@ -1158,7 +1158,7 @@ case 'tebakgambar':
 				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com'))
 				reply(mess.wait)
 				    anu = await fetchJson(`https://videfikri.com/api/igdl/?url=${args[0]}`, {method: 'get'}) 
-				    teks = `• Username : ${anu.result.username}\n• Durasi : ${anu.result.duration}\n*_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_*`
+				    teks = `â€¢ Username : ${anu.result.username}\nâ€¢ Durasi : ${anu.result.duration}\n*_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_*`
 				    frnky.sendMessage(from, `${teks}`, text, { quoted: waitsu})
 				    buffer = await getBuffer(anu.result.video)
 				    frnky.sendMessage(from, buffer, video, {mimtype: 'video/mp4', quoted: freply})
@@ -1168,7 +1168,7 @@ case 'igtv':
 				if (!isUrl(args[0]) && !args[0].includes('www.instagram.com'))
 				reply(mess.wait)
 				    anu = await fetchJson(`https://videfikri.com/api/igtv/?url=${args[0]}`, {method: 'get'}) 
-				    teks = `• Username : ${anu.result.username}\n• Durasi : ${anu.result.duration}\n*_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_*`
+				    teks = `â€¢ Username : ${anu.result.username}\nâ€¢ Durasi : ${anu.result.duration}\n*_Silahkan tunggu file media sedang dikirim mungkin butuh beberapa menit_*`
 				    frnky.sendMessage(from, `${teks}`, text, { quoted: waitsu})
 				    buffer = await getBuffer(anu.result.video_url)
 				    frnky.sendMessage(from, buffer, video, {mimtype: 'video/mp4', quoted: freply})
@@ -1200,7 +1200,7 @@ case 'igtv':
 				reply(mess.wait)
 				anu = await fetchJson(`https://api.vhtear.com/downloadfilm?judul=${body.slice(6)}&apikey=${vhtearkey}`, {method: 'get'})
 				if (anu.error) return reply(anu.error)
-				film = `� Judul: *${anu.result.judul}*\n� Resolusi: *${anu.result.data.resolusi}*\n� Link Download: *${anu.result.data.urlDownload}*\n`
+				film = `• Judul: *${anu.result.judul}*\n• Resolusi: *${anu.result.data.resolusi}*\n• Link Download: *${anu.result.data.urlDownload}*\n`
 				frnky.sendMessage(from, film, text, {quoted: mek}) 
 					break
       
@@ -1208,7 +1208,7 @@ case 'igtv':
              case 'playstore':
 					kuji = body.slice(7)
 					anu = await getBuffer(`https://api.vhtear.com/playstore?query={kuji}&apikey=${vhtearkey}`, {method: 'get'})
-					capty = `*➸ title :* ${anu.title}\n*➸ app_id :* ${anu.app_id}\n*➸ description :* ${anu.description}\n*➸ developer_id :* ${anu.developer_id}\n*➸ developer :* ${anu.developer}\n*➸ score :* ${anu.score}\n*➸ full_price :* ${anu.full_price}\n*➸ price :* ${anu.price}\n*➸ free :* ${anu.free}`
+					capty = `*âž¸ title :* ${anu.title}\n*âž¸ app_id :* ${anu.app_id}\n*âž¸ description :* ${anu.description}\n*âž¸ developer_id :* ${anu.developer_id}\n*âž¸ developer :* ${anu.developer}\n*âž¸ score :* ${anu.score}\n*âž¸ full_price :* ${anu.full_price}\n*âž¸ price :* ${anu.price}\n*âž¸ free :* ${anu.free}`
 					frnky.sendMessage(from, anu, image, {quoted: mek, caption: capty})
 					break
 			case 'truth':
@@ -1218,7 +1218,7 @@ case 'igtv':
 				frnky.sendMessage(from, truteh, image, { caption: 'Truth\n\n' + ttrth, quoted: mek })
 				break
 			case 'dare':
-				const dare = ['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu', 'telfon crush/pacar sekarang dan ss ke pemain', 'pap ke salah satu anggota grup', 'Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo', 'ss recent call whatsapp', 'drop emot "🦄💨" setiap ngetik di gc/pc selama 1 hari', 'kirim voice note bilang can i call u baby?', 'drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu', 'pake foto sule sampe 3 hari', 'ketik pake bahasa daerah 24 jam', 'ganti nama menjadi "gue anak lucinta luna" selama 5 jam', 'chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you', 'prank chat mantan dan bilang " i love u, pgn balikan', 'record voice baca surah al-kautsar', 'bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini', 'sebutkan tipe pacar mu!', 'snap/post foto pacar/crush', 'teriak gajelas lalu kirim pake vn kesini', 'pap mukamu lalu kirim ke salah satu temanmu', 'kirim fotomu dengan caption, aku anak pungut', 'teriak pake kata kasar sambil vn trus kirim kesini', 'teriak " anjimm gabutt anjimmm " di depan rumah mu', 'ganti nama jadi " BOWO " selama 24 jam', 'Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
+				const dare = ['Kirim pesan ke mantan kamu dan bilang "aku masih suka sama kamu', 'telfon crush/pacar sekarang dan ss ke pemain', 'pap ke salah satu anggota grup', 'Bilang "KAMU CANTIK BANGET NGGAK BOHONG" ke cowo', 'ss recent call whatsapp', 'drop emot "ðŸ¦„ðŸ’¨" setiap ngetik di gc/pc selama 1 hari', 'kirim voice note bilang can i call u baby?', 'drop kutipan lagu/quote, terus tag member yang cocok buat kutipan itu', 'pake foto sule sampe 3 hari', 'ketik pake bahasa daerah 24 jam', 'ganti nama menjadi "gue anak lucinta luna" selama 5 jam', 'chat ke kontak wa urutan sesuai %batre kamu, terus bilang ke dia "i lucky to hv you', 'prank chat mantan dan bilang " i love u, pgn balikan', 'record voice baca surah al-kautsar', 'bilang "i hv crush on you, mau jadi pacarku gak?" ke lawan jenis yang terakhir bgt kamu chat (serah di wa/tele), tunggu dia bales, kalo udah ss drop ke sini', 'sebutkan tipe pacar mu!', 'snap/post foto pacar/crush', 'teriak gajelas lalu kirim pake vn kesini', 'pap mukamu lalu kirim ke salah satu temanmu', 'kirim fotomu dengan caption, aku anak pungut', 'teriak pake kata kasar sambil vn trus kirim kesini', 'teriak " anjimm gabutt anjimmm " di depan rumah mu', 'ganti nama jadi " BOWO " selama 24 jam', 'Pura pura kerasukan, contoh : kerasukan maung, kerasukan belalang, kerasukan kulkas, dll']
 				const der = dare[Math.floor(Math.random() * dare.length)]
 				tod = await getBuffer(`https://i.ibb.co/305yt26/bf84f20635dedd5dde31e7e5b6983ae9.jpg`)
 				frnky.sendMessage(from, tod, image, { quoted: mek, caption: 'Dare\n\n' + der })
@@ -1295,7 +1295,7 @@ case 'igtv':
 					break
 			case 'setghoibreply':
 				var itsme = `${numbernye}@s.whatsapp.net`
-				var split = `𝙎𝙮𝙨𝙩𝙚𝙢 𝘾𝙝𝙖𝙣𝙜𝙚 𝙂𝙝𝙤𝙞𝙗`
+				var split = `ð™Žð™®ð™¨ð™©ð™šð™¢ ð˜¾ð™ð™–ð™£ð™œð™š ð™‚ð™ð™¤ð™žð™—`
 				var selepbot = {
 					contextInfo: {
 						participant: itsme,
@@ -1312,7 +1312,7 @@ case 'igtv':
 				break
 			case 'setmyteks':
 				var itsme = `${numbernye}@s.whatsapp.net`
-				var split = `𝙎𝙮𝙨𝙩𝙚𝙢 𝘾𝙝𝙖𝙣𝙜𝙚 𝙂𝙝𝙤𝙞𝙗`
+				var split = `ð™Žð™®ð™¨ð™©ð™šð™¢ ð˜¾ð™ð™–ð™£ð™œð™š ð™‚ð™ð™¤ð™žð™—`
 				var selepbot = {
 					contextInfo: {
 						participant: itsme,
@@ -1436,8 +1436,8 @@ case 'igtv':
 				}
 				var kbbi = body.slice(6)
 				axios.get(`https://tobz-api.herokuapp.com/api/kbbi?kata=${kbbi}&apikey=${tobzkey}`).then((res) => {
-					let hasil = `「 HASIL 」\n${res.data.result}`;
-					frnky.sendMessage(from, 'wait 🏃‍♂️', MessageType.text)
+					let hasil = `ã€Œ HASIL ã€\n${res.data.result}`;
+					frnky.sendMessage(from, 'wait ðŸƒâ€â™‚ï¸', MessageType.text)
 					frnky.sendMessage(from, hasil, MessageType.text, kbbigan);
 				})
 				break
@@ -1475,7 +1475,7 @@ case 'igtv':
 							imageToBase64(nimek)
 								.then(
 									(response) => {
-										frnky.sendMessage(from, 'wait 🏃‍♂️', MessageType.text, { quoted: mek })
+										frnky.sendMessage(from, 'wait ðŸƒâ€â™‚ï¸', MessageType.text, { quoted: mek })
 										var buf = Buffer.from(response, 'base64');
 										frnky.sendMessage(from, buf, MessageType.image, { caption: `LOMLI`, quoted: mek })
 									}
@@ -1506,7 +1506,7 @@ case 'igtv':
 				var teks = encodeURIComponent(body.slice(7))
 				if (!teks) return frnky.sendMessage(from, 'Input teks yang ingin di tulis', msgType.text, { quoted: mek })
 				var buffer = await getBuffer(`https://api.vhtear.com/hartatahta?text=${teks}&apikey=${vhtearkey}`)
-				frnky.sendMessage(from, `wait 🏃‍♂️`, MessageType.text, tahta)
+				frnky.sendMessage(from, `wait ðŸƒâ€â™‚ï¸`, MessageType.text, tahta)
 				frnky.sendMessage(from, buffer, MessageType.image, { caption: `HARTA TAHTA ${teks}`, quoted: mek })
 				break
          ///OTHER
@@ -1529,7 +1529,7 @@ case 'igtv':
 						imageToBase64(res.data.gambar)
 							.then(
 								(ress) => {
-									frnky.sendMessage(from, 'wait 🏃‍♂️', MessageType.text, maping)
+									frnky.sendMessage(from, 'wait ðŸƒâ€â™‚ï¸', MessageType.text, maping)
 									var buf = Buffer.from(ress, 'base64')
 									frnky.sendMessage(from, buf, MessageType.image, { caption: `${teks}`, quoted: mek })
 								})
@@ -1553,7 +1553,7 @@ case 'igtv':
 				var teks = encodeURIComponent(body.slice(9))
 				if (!teks) return frnky.sendMessage(from, 'Teksnya mana block!', MessageType.text, { quoted: mek })
 				var buffer = await getBuffer(`https://api.vhtear.com/thundertext?text=${teks}&apikey=${vhtearkey}`)
-				frnky.sendMessage(from, `wait 🏃‍♂️`, MessageType.text, thunder)
+				frnky.sendMessage(from, `wait ðŸƒâ€â™‚ï¸`, MessageType.text, thunder)
 				frnky.sendMessage(from, buffer, MessageType.image, { caption: `THUNDER : ${teks}`, quoted: mek })
 				break
           ///INFO
@@ -1604,14 +1604,14 @@ case 'igtv':
                     anu = await fetchJson(`https://api.vhtear.com/xxxsearch?query=${teks}&apikey=${vhtearkey}`, {method: 'get'})
                     teks = `===============\n`
                     {
-                    teks += `• Title: ${anu.data.title}\n• Durasi: ${anu.data.durasi}\n• Link: ${anu.data.url}\n===============\n`
+                    teks += `â€¢ Title: ${anu.data.title}\nâ€¢ Durasi: ${anu.data.durasi}\nâ€¢ Link: ${anu.data.url}\n===============\n`
                     }
                     reply(teks.trim())
 			     	break
            ///NSFW
              case 'bokep':
              var itsme = `${numbernye}@s.whatsapp.net`
-				var split = `Bokep🏃‍♂️`
+				var split = `BokepðŸƒâ€â™‚ï¸`
 				var selepbot = {
 					contextInfo: {
 						participant: itsme,
@@ -1821,48 +1821,48 @@ case 'igtv':
 			case 'help':
 				runtime = process.uptime()
 				frnky.sendMessage(from, `
-❏ Lib: Baileys/FrankyGanz
-❏ Prefix: 「${prefix}」
-❏ Creator: MhankBarBar
-❏ Remodefikasi : @Franky397
-❏ Publik: ${publik}
-❏ Waktu: ${time}
-❏ Bulan : ${bulan}
+â Lib: Baileys/FrankyGanz
+â Prefix: ã€Œ${prefix}ã€
+â Creator: MhankBarBar
+â Remodefikasi : @Franky397
+â Publik: ${publik}
+â Waktu: ${time}
+â Bulan : ${bulan}
 
-❏ ${prefix}public
-❏ ${prefix}self
-❏ ${prefix}virtex
-❏ ${prefix}download
-❏ ${prefix}anime
-❏ ${prefix}media
-❏ ${prefix}voice
-❏ ${prefix}maker
-❏ ${prefix}fun
-❏ ${prefix}nsfw
-❏ ${prefix}stickerlist
-❏ ${prefix}imagelist 
-❏ ${prefix}vnlist 
-❏ ${prefix}videolist 
-❏ ${prefix}antidelete ctaktif / ctmati
-❏ ${prefix}antidelete aktif / mati
-❏ ${prefix}payment
-❏ ${prefix}cr1 @tag text|text
-❏ ${prefix}runtime
-❏ ${prefix}ping
-❏ ${prefix}cekchat
+â ${prefix}public
+â ${prefix}self
+â ${prefix}virtex
+â ${prefix}download
+â ${prefix}anime
+â ${prefix}media
+â ${prefix}voice
+â ${prefix}maker
+â ${prefix}fun
+â ${prefix}nsfw
+â ${prefix}stickerlist
+â ${prefix}imagelist 
+â ${prefix}vnlist 
+â ${prefix}videolist 
+â ${prefix}antidelete ctaktif / ctmati
+â ${prefix}antidelete aktif / mati
+â ${prefix}payment
+â ${prefix}cr1 @tag text|text
+â ${prefix}runtime
+â ${prefix}ping
+â ${prefix}cekchat
 
-❏  POPULER
+â  POPULER
 
-❏ ${prefix}googlemkr [teks|teks|teks]
-❏ ${prefix}bocilepep [teks]
-❏ ${prefix}youtuber [teks]
-❏ ${prefix}hekel [teks]
-❏ ${prefix}tinyurl
-❏ ${prefix}hurufkebalik [teks]
-❏ ${prefix}spamcall [831xxx]
-❏ ${prefix}ytmp4 [linkYT]
-❏ ${prefix}play [lagu]
-❏ ${prefix}brainly [query]
+â ${prefix}googlemkr [teks|teks|teks]
+â ${prefix}bocilepep [teks]
+â ${prefix}youtuber [teks]
+â ${prefix}hekel [teks]
+â ${prefix}tinyurl
+â ${prefix}hurufkebalik [teks]
+â ${prefix}spamcall [831xxx]
+â ${prefix}ytmp4 [linkYT]
+â ${prefix}play [lagu]
+â ${prefix}brainly [query]
 
 SELF-KY`, MessageType.text, {quoted: freply})
 				break
@@ -2001,9 +2001,9 @@ SELF-KY`, MessageType.text, {quoted: freply})
 			case 'hoak':
 				frnky.updatePresence(from, Presence.composing)
 				data = await fetchJson(`https://docs-jojo.herokuapp.com/api/infohoax`, { method: 'get' })
-				teks = '────────────────────\n\n'
+				teks = 'â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n\n'
 				for (let i of data.result) {
-					teks += `Title : ${i.title}\n*Link* : ${i.link}\n*Tag* : ${i.tag}\n\n────────────────────\n`
+					teks += `Title : ${i.title}\n*Link* : ${i.link}\n*Tag* : ${i.tag}\n\nâ”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€\n`
 				}
 				reply(teks.trim())
 				break
@@ -2268,7 +2268,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 						}
 					}
 				}
-				frnky.sendMessage(from, `*──「 PAYMENT 」──*\n\n- - Nomer : ${nomer}`, text, { quoted: freply})
+				frnky.sendMessage(from, `*â”€â”€ã€Œ PAYMENT ã€â”€â”€*\n\n- - Nomer : ${nomer}`, text, { quoted: freply})
 				break
             ///NSFW
                    case 'hot1':
@@ -2451,7 +2451,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 							imageToBase64(nimek)
 								.then(
 									(response) => {
-										frnky.sendMessage(from, 'wait 🏃‍♂️', MessageType.text)
+										frnky.sendMessage(from, 'wait ðŸƒâ€â™‚ï¸', MessageType.text)
 										var buf = Buffer.from(response, 'base64');
 										frnky.sendMessage(from, buf, MessageType.image, { caption: `Neko!`, quoted: mek })
 									}
@@ -2470,7 +2470,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 					love = body.slice(8)
 					if (love.length > 8) return reply('Teksnya kepanjangan, maksimal 7 karakter')
 					bufferxcz = await getBuffer(`https://api.vhtear.com/fire_maker?text=${love}&apikey=${vhtearkey}`, {method: 'get'})
-					frnky.sendMessage(from, bufferxcz, image, {quoted: mek, caption: 'dh jadi su🗿'})
+					frnky.sendMessage(from, bufferxcz, image, {quoted: mek, caption: 'dh jadi suðŸ—¿'})
 					break
          ///MAKER
               case 'lionlogo':
@@ -2487,7 +2487,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
             ///MAKER
              case 'airteks':
              var itsme = `${numbernye}@s.whatsapp.net`
-				var split = `*AIRTEKS🗿*`
+				var split = `*AIRTEKSðŸ—¿*`
 				var selepbot = {
 					contextInfo: {
 						participant: itsme,
@@ -2516,7 +2516,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
              ///MAKER
              case 'pornlogo':
              var itsme = `${numbernye}@s.whatsapp.net`
-				var split = `*PORNLOGO🗿*`
+				var split = `*PORNLOGOðŸ—¿*`
 				var selepbot = {
 					contextInfo: {
 						participant: itsme,
@@ -2538,7 +2538,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 			case 'blocklist':
 				teks = 'BLOCK LIST :\n'
 				for (let block of blocked) {
-					teks += `┣➢ @${block.split('@')[0]}\n`
+					teks += `â”£âž¢ @${block.split('@')[0]}\n`
 				}
 				teks += `TOTAL : ${blocked.length}`
 				frnky.sendMessage(from, teks.trim(), extendedText, { quoted: mek, contextInfo: { "mentionedJid": blocked } })
@@ -2559,7 +2559,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 							fs.unlinkSync(media)
 						})
 				} else {
-					reply('𝗸𝗶𝗿𝗶𝗺 𝗳𝗼𝘁𝗼 𝗱𝗲𝗻𝗴𝗮𝗻 𝗰𝗲𝗽𝘁𝗶𝗼𝗻 ${prefix}𝗼??𝗿')
+					reply('ð—¸ð—¶ð—¿ð—¶ð—º ð—³ð—¼ð˜ð—¼ ð—±ð—²ð—»ð—´ð—®ð—» ð—°ð—²ð—½ð˜ð—¶ð—¼ð—» ${prefix}ð—¼??ð—¿')
 				}
 				break
 
@@ -2604,7 +2604,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 							console.log(`Error : ${err}`)
 							fs.unlinkSync(media)
 							tipe = media.endsWith('.mp4') ? 'video' : 'gif'
-							reply(`❌ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
+							reply(`âŒ Gagal, pada saat mengkonversi ${tipe} ke stiker`)
 						})
 						.on('end', function () {
 							console.log('Finish')
@@ -2656,25 +2656,25 @@ SELF-KY`, MessageType.text, {quoted: freply})
 							.toFormat('webp')
 							.save(ran)*/
 				} else {
-					reply(`Kirim gambar/Video minimal 6 detik🗿 dengan caption ${prefix}sticker / ${prefix}sgif ❗`)
+					reply(`Kirim gambar/Video minimal 6 detikðŸ—¿ dengan caption ${prefix}sticker / ${prefix}sgif â—`)
 				}
 				break
         ///FUN
 			case 'gtts':
 			case 'tts':
-				if (args.length < 1) return frnky.sendMessage(from, 'Diperlukan Code bahasa kak, Contoh ${prefix}gtts id [text kakak](•‿•)', text, { quoted: mek })
+				if (args.length < 1) return frnky.sendMessage(from, 'Diperlukan Code bahasa kak, Contoh ${prefix}gtts id [text kakak](â€¢â€¿â€¢)', text, { quoted: mek })
 				const gtts = require('./lib/gtts')(args[0])
-				if (args.length < 2) return frnky.sendMessage(from, '𝗧𝗲𝗸𝘀 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶𝗷𝗮𝗱𝗶𝗶𝗻 𝘀𝘂𝗮𝗿𝗮 𝗺𝗮𝗻𝗮 𝘁𝗼𝗱? 𝘁𝘆𝘁𝗱 𝗸𝗮𝗵?', text, { quoted: mek })
+				if (args.length < 2) return frnky.sendMessage(from, 'ð—§ð—²ð—¸ð˜€ ð˜†ð—®ð—»ð—´ ð—ºð—®ð˜‚ ð—±ð—¶ð—·ð—®ð—±ð—¶ð—¶ð—» ð˜€ð˜‚ð—®ð—¿ð—® ð—ºð—®ð—»ð—® ð˜ð—¼ð—±? ð˜ð˜†ð˜ð—± ð—¸ð—®ð—µ?', text, { quoted: mek })
 				dtt = body.slice(8)
 				ranm = getRandom('.mp3')
 				rano = getRandom('.ogg')
 				dtt.length > 300
-					? reply('𝗜𝗱𝗶𝗵 𝗻𝗴𝗲𝗹𝘂𝗻𝗷𝗮𝗸 𝗻𝗴𝗲𝗻𝘁𝗼𝗱, 𝘁𝗲𝗸𝘀𝗻𝘆𝗮 𝗷𝗮𝗻𝗴𝗮𝗻 𝗸𝗲𝗽𝗮𝗻𝗷𝗮𝗻𝗴𝗮𝗻 😤')
+					? reply('ð—œð—±ð—¶ð—µ ð—»ð—´ð—²ð—¹ð˜‚ð—»ð—·ð—®ð—¸ ð—»ð—´ð—²ð—»ð˜ð—¼ð—±, ð˜ð—²ð—¸ð˜€ð—»ð˜†ð—® ð—·ð—®ð—»ð—´ð—®ð—» ð—¸ð—²ð—½ð—®ð—»ð—·ð—®ð—»ð—´ð—®ð—» ðŸ˜¤')
 					: gtts.save(ranm, dtt, function () {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
 							buff = fs.readFileSync(rano)
-							if (err) return reply('𝗬𝗲𝗮𝗵 𝗴𝗮𝗴𝗮𝗹 ;(, 𝘂𝗹𝗮𝗻𝗴𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝘁𝗼𝗱 ^_^')
+							if (err) return reply('ð—¬ð—²ð—®ð—µ ð—´ð—®ð—´ð—®ð—¹ ;(, ð˜‚ð—¹ð—®ð—»ð—´ð—¶ ð—¹ð—®ð—´ð—¶ ð˜†ð—®ð—µ ð˜ð—¼ð—± ^_^')
 							frnky.sendMessage(from, buff, audio, { quoted: mek, ptt: true })
 							fs.unlinkSync(rano)
 						})
@@ -2887,7 +2887,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 			case 'tagme':
 				var nom = mek.participant
 				const tag = {
-					text: `@${nom.split("@s.whatsapp.net")[0]} Ku tag kau sayang❤️🗿!`,
+					text: `@${nom.split("@s.whatsapp.net")[0]} Ku tag kau sayangâ¤ï¸ðŸ—¿!`,
 					contextInfo: { mentionedJid: [nom] }
 				}
 				frnky.sendMessage(from, tag, text, { quoted: mek })
@@ -2920,20 +2920,20 @@ SELF-KY`, MessageType.text, {quoted: freply})
 				if (!isGroup) return reply(mess.only.group)
 				if (!isOwner) return reply(mess.only.ownerB)
 				frnky.blockUser(`${body.slice(7)}@c.us`, "add")
-				frnky.sendMessage(from, `𝗽𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗗𝗶𝘁𝗲𝗿𝗶𝗺𝗮, 𝗺𝗲𝗺𝗯𝗹𝗼𝗸𝗶𝗿 ${body.slice(7)}@c.us`, text)
+				frnky.sendMessage(from, `ð—½ð—²ð—¿ð—¶ð—»ð˜ð—®ð—µ ð——ð—¶ð˜ð—²ð—¿ð—¶ð—ºð—®, ð—ºð—²ð—ºð—¯ð—¹ð—¼ð—¸ð—¶ð—¿ ${body.slice(7)}@c.us`, text)
 				break
      ///INFO
 			case 'unblock':
 				if (!isGroup) return reply(mess.only.group)
 				if (!isOwner) return reply(mess.only.ownerB)
 				frnky.blockUser(`${body.slice(9)}@c.us`, "remove")
-				frnky.sendMessage(from, `𝗽𝗲𝗿𝗶𝗻𝘁𝗮𝗵 𝗗𝗶𝘁𝗲𝗿𝗶𝗺𝗮, 𝗺𝗲𝗺𝗯????𝗮 ${body.slice(9)}@c.us`, text)
+				frnky.sendMessage(from, `ð—½ð—²ð—¿ð—¶ð—»ð˜ð—®ð—µ ð——ð—¶ð˜ð—²ð—¿ð—¶ð—ºð—®, ð—ºð—²ð—ºð—¯????ð—® ${body.slice(9)}@c.us`, text)
 				break
     ///GROUP
 			case 'leave':
 				if (!isGroup) return reply(mess.only.group)
 				frnky.frnky.leaveGroup(from, 'Cyaaa', MessageType.text)
-				await frnky.frnky.leaveGroup(from, '𝗕𝘆𝗲𝗲', groupId)
+				await frnky.frnky.leaveGroup(from, 'ð—•ð˜†ð—²ð—²', groupId)
 				break
     ///GROUP
 			case 'promote':
@@ -3014,7 +3014,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 			///INFO
 			case 'clone':
 				if (!isGroup) return reply(mess.only.group)
-				if (args.length < 1) return reply('𝘁𝗮𝗴 𝘁𝗮𝗿𝗴𝗲𝘁 𝘆𝗮𝗻𝗴 𝗺𝗮𝘂 𝗱𝗶 𝗰𝗹𝗼𝗻𝗲!!!')
+				if (args.length < 1) return reply('ð˜ð—®ð—´ ð˜ð—®ð—¿ð—´ð—²ð˜ ð˜†ð—®ð—»ð—´ ð—ºð—®ð˜‚ ð—±ð—¶ ð—°ð—¹ð—¼ð—»ð—²!!!')
 				if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Tag cvk')
 				mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid[0]
 				let { jid, id, notify } = groupMembers.find(x => x.jid === mentioned)
@@ -3024,7 +3024,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 					frnky.updateProfilePicture(botNumber, buffer)
 					mentions(`Foto profile Berhasil di perbarui menggunakan foto profile @${id.split('@')[0]}`, [jid], true)
 				} catch (e) {
-					reply('𝗬𝗲𝗮𝗵 𝗴𝗮𝗴𝗮𝗹 ;(, 𝘂𝗹𝗮𝗻𝗴𝗶 𝗹𝗮𝗴𝗶 𝘆𝗮𝗵 𝘁𝗼𝗱 ^_^')
+					reply('ð—¬ð—²ð—®ð—µ ð—´ð—®ð—´ð—®ð—¹ ;(, ð˜‚ð—¹ð—®ð—»ð—´ð—¶ ð—¹ð—®ð—´ð—¶ ð˜†ð—®ð—µ ð˜ð—¼ð—± ^_^')
 				}
 				break
          ///ANIME
@@ -3039,7 +3039,7 @@ SELF-KY`, MessageType.text, {quoted: freply})
 						reply(err)
 					})
 				} else {
-					reply('𝗸𝗶𝗿𝗶𝗺 𝗳𝗼𝘁𝗼 𝗱𝗲𝗻𝗴𝗮𝗻 𝗰𝗲𝗽𝘁𝗶𝗼𝗻 𝗼𝗰𝗿')
+					reply('ð—¸ð—¶ð—¿ð—¶ð—º ð—³ð—¼ð˜ð—¼ ð—±ð—²ð—»ð—´ð—®ð—» ð—°ð—²ð—½ð˜ð—¶ð—¼ð—» ð—¼ð—°ð—¿')
 				}
 				break
 			default:
