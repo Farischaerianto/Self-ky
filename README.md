@@ -38,12 +38,13 @@ ATAU
 > node franky
 ```
 
-#  Special Thanks
+#  Special Thanks♥️
 tq bruhh
-
+```
+• MhankBarBar
 • X-MrG3P5
 • X-Mrcyber51
 • And Creator All
-
+```
 Tq udh mampir ke github gw ><
 
